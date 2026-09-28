@@ -1,5 +1,5 @@
 {
-  "name": "website-migration-monorepo",
+  "name": "dycom-static-sites",
   "private": true,
   "packageManager": "pnpm@10.15.0",
   "scripts": {
