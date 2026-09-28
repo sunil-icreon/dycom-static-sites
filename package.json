@@ -17,6 +17,7 @@
     "build:anscollc": "turbo run build --filter=@repo/anscollc"
   },
   "devDependencies": {
+    "next": "15.5.4",
     "prettier": "3.6.2",
     "turbo": "2.11.4"
   }
