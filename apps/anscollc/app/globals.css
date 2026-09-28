@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+@source '../../../packages/base-ui/src';
+
+/*
+ * Design tokens for this site — sourced from migration/captures/anscollc/tokens.json
+ * (captured 2026-09-28 from https://anscollc.com/). Update from a fresh capture, not from memory.
+ */
+@theme {
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-ink: #2d2926;
+  --color-ink-soft: #444444;
+  --color-ink-muted: #6c757d;
+  --color-border: #303030;
+  --color-primary: #b01630;
+  --color-primary-foreground: #ffffff;
+  --color-ui: #303030;
+
+  --font-body: var(--font-montserrat), sans-serif;
+  --font-heading: var(--font-montserrat), sans-serif;
+  --font-ui: Roboto, 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}

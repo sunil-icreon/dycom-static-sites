@@ -1,0 +1,23 @@
+{
+  "name": "website-migration-monorepo",
+  "private": true,
+  "packageManager": "pnpm@10.15.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "migrate": "echo 'Use /migrate-site <site-id> in Claude Code'",
+    "capture:site": "node tools/site-capture/src/capture.mjs",
+    "diff:site": "node tools/site-capture/src/diff.mjs",
+    "dev:anscollc": "turbo run dev --filter=@repo/anscollc",
+    "build:anscollc": "turbo run build --filter=@repo/anscollc"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2",
+    "turbo": "2.11.4"
+  }
+}
